@@ -1,6 +1,6 @@
 import asyncio
 
-from src.nlu.utils import get_multi_embedding
+from src.nlu.utils import get_multi_embedding, get_answer, b64_to_img
 from ..models import AnswerModel
 from ..core import VectorRepository
 
@@ -16,9 +16,9 @@ class FindAnswerView:
 
         docs = await self._repository.get_relevance_documents(embedding, top_k)
 
-        answer = None
+        answer = await asyncio.to_thread(get_answer, query=query, images=[b64_to_img(doc.metadata.image) for doc in docs])
 
         return AnswerModel(
-            documents=docs,
             answer=answer,
+            documents=docs,
         )
