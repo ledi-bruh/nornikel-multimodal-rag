@@ -1,0 +1,14 @@
+.message_container {
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    color: #ECECEC;
+}
+
+.user_message_container {
+    background-color: #353535d9;
+    margin-left: 45%;
+}
+
+/* .ai_message_container {
+    margin-right: 45%;
+} */

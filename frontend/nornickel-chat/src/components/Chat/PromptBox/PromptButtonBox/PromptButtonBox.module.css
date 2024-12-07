@@ -1,0 +1,32 @@
+.buttons_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+}
+
+.button_container_clip {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.9rem;
+}
+
+.button_container_clip:hover {
+  background: #252525;
+}
+
+.button_clip {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.button_container_input {
+  background: none;
+  border: none;
+}
+
+.button_input {
+  height: 2.5rem;
+  width: 2.5rem;
+}
