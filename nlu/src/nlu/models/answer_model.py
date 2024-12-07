@@ -6,5 +6,5 @@ __all__ = ['AnswerModel']
 
 
 class AnswerModel(BaseModel):
-    documents: list[Document]
     answer: str | None = None
+    documents: list[Document]
