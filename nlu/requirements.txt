@@ -1,0 +1,8 @@
+fastapi==0.115.0
+uvicorn==0.31.0
+python-multipart==0.0.17
+pydantic_settings==2.6.1
+rodi==2.0.6
+
+qdrant-client==1.12.1
+lmdeploy==0.6.3
