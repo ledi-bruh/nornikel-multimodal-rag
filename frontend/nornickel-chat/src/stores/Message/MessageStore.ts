@@ -3,7 +3,7 @@ import { Message } from "../../types/Message";
 import api from "../../api";
 
 class MessageStore {
-  topK: number = 3;
+  topK: number = 1;
   messageList: Message[] = [];
   loading: boolean = false;
 

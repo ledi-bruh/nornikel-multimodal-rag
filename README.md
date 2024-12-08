@@ -156,8 +156,15 @@ docker compose up
 
 0. Скачать node@20.11.0
 
-1. `cd frontend/nornickel-chat`
+1. `cd frontend/nornickel-chat` и Переименуйте файл `.env.example` в `.env` и заполните необходимые переменные
 
 2. `npm install`
 
 3. `npm run dev`
+
+
+### Решение развернуто
+
+frontend http://176.99.130.189:5173/
+backend swagger http://176.99.130.189:8558/docs
+db http://176.99.130.189:6333/dashboard
