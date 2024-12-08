@@ -1,16 +1,15 @@
-// import axios from "./helpers/axios";
-import { response } from "../mock/response";
+import axios from "./helpers/axios";
 import { AnswerModel } from "./baseTypes";
 
-async function getAnswer(prompt: string, topK: number): Promise<AnswerModel> {
-  // const response = await axios.get("/predict", {
-  //   params: {
-  //     prompt: prompt,
-  //     topK: topK,
-  //   },
-  // });
-  // const answer = response.data.data;
-  return response
+async function getAnswer(query: string, top_k: number): Promise<AnswerModel> {
+  const response = await axios.post("/answer", null, {
+    params: {
+      query: query,
+      top_k: top_k,
+    },
+  });
+  const answer = response.data;
+  return answer;
 }
 
 export { getAnswer };
