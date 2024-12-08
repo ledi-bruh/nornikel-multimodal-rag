@@ -1,4 +1,6 @@
+import { AnswerModel } from "../api/baseTypes";
+
 export interface Message {
-  text: string;
+  data: AnswerModel;
   author: string;
 }

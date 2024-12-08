@@ -1,6 +1,6 @@
 import { Message } from "./Message";
 
 export interface ChatHistoryElement {
-  name: string;
+  id: string;
   messages: Message[];
 }

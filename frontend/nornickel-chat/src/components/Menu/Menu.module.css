@@ -6,15 +6,18 @@
   background-color: #171717;
   height: 100vh;
 
-  padding: 1rem;
+  padding: 2rem 1.25rem 2rem 1.25rem;
   width: 20rem;
 
   position: fixed;
   left: 0;
+
+  z-index: 1;
 }
 
 .plus_button_container {
   display: flex;
+  justify-content: space-between;
   gap: 1rem;
   align-items: center;
   margin-bottom: 1rem;
@@ -32,4 +35,8 @@
 
 .history_menu_text {
   margin-bottom: 2rem;
+}
+
+.logo {
+  width: 10rem;
 }

@@ -1,0 +1,10 @@
+.user_message_container {
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: #353535d9;
+  margin-left: 45%;
+}
+
+.user_message_text {
+  color: #ececec;
+}
