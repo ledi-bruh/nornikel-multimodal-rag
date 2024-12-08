@@ -1,8 +1,9 @@
 services:
+
   qdrant:
+    container_name: qdrant
     image: qdrant/qdrant:latest
     restart: always
-    container_name: qdrant
     ports:
       - 6333:6333
       - 6334:6334
@@ -20,11 +21,30 @@ services:
     networks:
       - nornikel-net
 
+  # lmdeploy:
+  #   container_name: lmdeploy
+  #   image: openmmlab/lmdeploy:latest
+  #   ports:
+  #     - 23333:23333
+  #   volumes:
+  #     - ${LOCAL_HUGGINGFACE_MODELS}:/root/.cache/huggingface
+  #   stdin_open: true
+  #   tty: true
+  #   ipc: host
+  #   command: lmdeploy serve api_server OpenGVLab/InternVL2-8B-AWQ --backend turbomind --model-format awq
+  #   deploy:
+  #     resources:
+  #       reservations:
+  #         devices:
+  #           - driver: nvidia
+  #             count: "all"
+  #             capabilities: [gpu]
+
   nlu:
+    container_name: nlu
     build:
       context: .
       dockerfile: ./Dockerfile
-    container_name: nlu
     restart: always
     volumes:
       - ${LOCAL_HUGGINGFACE_MODELS}:/opt/.cache/huggingface
