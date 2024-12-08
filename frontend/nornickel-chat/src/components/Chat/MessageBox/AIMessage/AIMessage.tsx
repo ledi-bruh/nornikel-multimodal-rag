@@ -12,12 +12,12 @@ export default function AIMessage(props: { message: Message }) {
         {index + 1}. Изображение {document.id}
       </h2>
       <p className={clsx(classes.ai_answer_text, classes.img_description)}>
-        Изображение отвечает на запрос с уверенностью {document.score * 100}%.
+        Изображение отвечает на запрос с уверенностью {document.score}.
       </p>
       <p className={clsx(classes.ai_answer_text, classes.img_description)}>
         Источник: {document.metadata.source}, страница {document.metadata.page}.
       </p>
-      <img src={document.metadata.image} className={classes.ai_answer_img} />
+      <img src={`data:image/jpeg;base64,${document.metadata.image}`} className={classes.ai_answer_img} />
     </li>
   ));
 
