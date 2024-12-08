@@ -4,6 +4,7 @@ python-multipart==0.0.17
 pydantic_settings==2.6.1
 rodi==2.0.6
 
+torch==2.4.0
 qdrant-client==1.12.1
 colpali_engine==0.3.4
 timm==1.0.12
