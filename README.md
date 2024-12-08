@@ -150,3 +150,14 @@ docker compose up
 ```
 
 В первый запуск будут загружаться модели, поэтому придется подождать.
+
+
+Запуск frontend части:
+
+0. Скачать node@20.11.0
+
+1. `cd frontend/nornickel-chat`
+
+2. `npm install`
+
+3. `npm run dev`
