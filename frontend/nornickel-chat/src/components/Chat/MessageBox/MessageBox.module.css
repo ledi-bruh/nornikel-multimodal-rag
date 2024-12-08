@@ -1,0 +1,7 @@
+.message_container {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 12rem;
+}

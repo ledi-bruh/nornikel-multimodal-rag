@@ -1,0 +1,35 @@
+.ai_answer_text {
+    color: rgb(190, 190, 190);
+}
+
+.ai_answer_main_text {
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+}
+
+.h2_header {
+    margin-bottom: 1.25rem;
+}
+
+.list_container {
+    padding-left: 1rem;
+}
+
+.point_container {
+    list-style-type: none;
+}
+
+.h3_header {
+    margin-bottom: 0.75rem;
+}
+
+.img_description {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+}
+
+.ai_answer_img {
+    width: 100%;
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+}
