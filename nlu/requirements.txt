@@ -5,4 +5,7 @@ pydantic_settings==2.6.1
 rodi==2.0.6
 
 qdrant-client==1.12.1
-lmdeploy==0.6.3
+colpali_engine==0.3.4
+timm==1.0.12
+qwen-vl-utils==0.0.8
+autoawq>=0.1.8
