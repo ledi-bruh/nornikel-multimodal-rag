@@ -16,7 +16,10 @@ class FindAnswerView:
 
         docs = await self._repository.get_relevance_documents(embedding, top_k)
 
-        answer = await asyncio.to_thread(get_answer, query=query, images=[b64_to_img(doc.metadata.image) for doc in docs])
+        try:
+            answer = await asyncio.to_thread(get_answer, query=query, images=[b64_to_img(doc.metadata.image) for doc in docs])
+        except:
+            answer = None
 
         return AnswerModel(
             answer=answer,
